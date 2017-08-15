@@ -17,8 +17,8 @@ double rad2deg2(double x) { return x * 180 / pi(); }
 
 
 // Set the timestep length and duration
-size_t N = 6;
-double dt = 0.2;
+size_t N = 5;
+double dt = 0.3;
 
 // This value assumes the model presented in the classroom is used.
 //

@@ -22,8 +22,8 @@ The update equations, which are implemented as model constraints in MPC.cpp line
 <br>
 
 #### Timestep length and elapsed duration (N & dt)
-I chose `N=6` because this offered a good tradeoff between computation efficiency and controller stability. Values higher than this tended to overload my computer, causing the `Solve()` results to not come back in time for each call from the simulator, ultimately leading to the car leaving the track.
-I chose `dt=0.2` as anything lower than `0.1` caused instability with the latency enabled and anything higher than `0.2` caused the car to be too slow to react to turns and target speed changes. The car looks like the driver is on the phone.
+I chose `N=5` because this offered a good tradeoff between computation efficiency and controller stability. Values higher than this tended to overload my computer, causing the `Solve()` results to not come back in time for each call from the simulator, ultimately leading to the car leaving the track.
+I chose `dt=0.3` as anything lower than `0.1` caused instability with the latency enabled and anything higher than `0.4` meant the time step points to be a little too spread out causing the car to swing out to the track edge on turns.
 
 <br>
 
